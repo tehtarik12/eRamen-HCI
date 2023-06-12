@@ -1,0 +1,73 @@
+form {
+	margin: auto;
+	padding: 20px;
+	background: white;
+	width: 80%;
+	border-radius: 10px;
+}
+
+.form-control {
+	width: 90%;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid grey;
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+
+input {
+	height: 45px;
+}
+
+form .submit {
+	background: #FF0000;
+	border-color: transparent;
+	color: white;
+	font-size: 20px;
+	letter-spacing: 2px;
+	height: 50px;
+	margin-top: 20px;
+	transition: 0.4s ease;
+}
+
+form .submit:hover {
+	background: #6f0202;
+	cursor: pointer;
+}
+
+#error_message {
+	margin: auto;
+	text-align: center;
+	width: 90%;
+	color: white;
+	background: red;
+	font-size: 14px;
+	transition: 0.5s ease;
+}
+
+@media screen and (min-width: 480px) {
+	form {
+		width: 60%;
+	}
+		#error_message {
+			width: 60%;
+			color: white;
+			background: red;
+			font-size: 14px;
+			transition: 0.5s ease;
+		}
+}
+
+@media screen and (min-width: 768px) {
+	form {
+		width: 40%;
+	}
+		#error_message {
+			width: 40%;
+			color: white;
+			background: red;
+			font-size: 14px;
+			transition: 0.5s ease;
+		}
+}

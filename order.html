@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ERamen</title>
+
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+	<!-- css file custom-->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/products.css">
+	<link rel="stylesheet" href="css/order.css">
+
+	<!-- plugins -->
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="./js/owlcarousel.js"></script>
+	<link rel="stylesheet" href="./css/owlcarousel.css" />
+</head>
+
+<body>
+
+	<!-- Header section starts-->
+	<header>
+		<a href="#" class="logo"><i class="fas fa-bowl-rice"></i>ERamen.</a>
+		<nav class="navbar">
+			<a href="home.html">home</a>
+			<a href="aboutus.html">About Us</a>
+			<a href="contactus.html">Contact Us</a>
+			<a href="product.html">Product</a>
+			<a href="promotion.html">Promotion</a>
+		</nav>
+
+		<div class="icon">
+			<i class="fas fa-bars" id="menu-bars"></i>
+			<i class="fas fa-search" id="search-icon"></i>
+			<a href="#" class="fas fa-heart"></a>
+			<a href="order.html" class="fas fa-shopping-cart"></a>
+
+		</div>
+
+	</header>
+	<!-- header section ends-->
+
+	<!-- search form-->
+	<form action="" id="search-form">
+		<input type="search" placeholder="search here..." id="search-box">
+		<label for="search-box" class="fas fa-search"></label>
+		<i class="fas fa-times" id="close"></i>
+	</form>
+
+	<!-- START-->
+	<html>
+	<body>
+		<div class="container">
+			<h1>Order Menu</h1>
+			<form action="proses_order.php" method="POST">
+				<div class="form-group">
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" required>
+				</div>
+				<div class="form-group">
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required>
+				</div>
+				<div class="form-group">
+					<label for="Alamat">Alamat:</label>
+					<input type="text" id="name" name="name" required>
+				</div>
+				<div class="form-group">
+					<label for="product">Product:</label>
+					<select id="product" name="product">
+						<option value="product1">Legendary Pork Ramen</option>
+						<option value="product2">Ramen chicken suop</option>
+						<option value="product3">Ramen ikanawa</option>
+						<option value="product4">Ramen egg sushi</option>
+						<option value="product5">Ramen spicy chicken</option>
+						<option value="product6">Ramen sushi noodle</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="quantity">Quantity:</label>
+					<input type="number" id="quantity" name="quantity" min="1" required>
+				</div>
+				<input type="submit" value="Order" class="btn">
+			</form>
+		</div>
+	</body>
+	
+	</html>
+	<!-- ENDS-->

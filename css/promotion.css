@@ -1,0 +1,80 @@
+.promo {
+	display: flex;
+	background: black;
+	background-image: url(../asset/img/ne3.jpg);
+	background-size: contain;
+}
+
+.promo-text {
+	width: 100%;
+}
+.promo-img {
+	display: none;
+	width: 50%;
+}
+
+.promo-text {
+	margin: auto 30px;
+	color: white;
+}
+.promo-title {
+	font-size: 24px;
+	padding: 20px 0;
+}
+.promo-desc {
+	font-size: 20px;
+	padding: 40px 0;
+}
+.promo-cta {
+	font-size: 20px;
+	padding: 40px 0;
+}
+.promo-cta a {
+	text-decoration: none;
+	padding: 12px 20px;
+	background: #FF0000;
+	color: white;
+}
+.promo-cta a:hover {
+	background: #750101;
+}
+
+.promo-img img {
+	width: 100%;
+	display: none;
+}
+
+
+@media screen and (min-width: 480px) {
+
+	.promo-title {
+			font-size: 30px;
+			padding: 20px 0;
+		}
+	
+		.promo-desc {
+			font-size: 20px;
+			padding: 50px 0;
+		}
+	
+		.promo-cta {
+			font-size: 20px;
+			padding: 50px 0;
+		}
+}
+@media screen and (min-width: 834px) {
+		.promo {
+			background: black;
+			background-image: none;
+		}
+		.promo-text {
+			width: 50%;
+		}
+		.promo-img {
+			display: block;
+		}
+		.promo-img img {
+			width: 100%;
+			display: block;
+		}
+}
